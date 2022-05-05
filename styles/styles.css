@@ -1,0 +1,36 @@
+* {                          /* universal selector / selecteur universel */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #201D21; /* we include padding and border in the width and height / on inclue padding and border dans la largeur et la hauteur */  
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80em;
+}
+
+.button {
+    border: none; /* here we try to make it as clean as possible so the border and the outline of the button won't show */
+    outline: none;
+    align-self: center; /* on essaie de le faire le plus "propre" possible, en cachant la bordure et le lignes exterieures du boutton */
+    font-size: 12px;
+    font-weight: 900; 
+    color: #06114f;
+    border-radius: 30px;
+    height: 50px;
+    width: 180px;
+    background: #7108BF;
+    transition: 0.5s ease; /* effet plus realiste au lieu d'être immédiat / more realistic effect instead of it doing it right away */
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #9713F9; /* here, when we hover over the button we'll create the effect of it "lightning up" */
+    box-shadow: 0 0 10px #9713F9, /* ici qu'on passera la souris sur le bouton on lui donnera l'effet "brillant"*/
+                0 0 40px #9713F9,  /* et ici on lui donnera l'effet de la lumière se dispersant */
+                0 0 120px #9713F9, /* here we'll give the effect of the light scaterring */
+                0 0 300px #9713F9;
+}
